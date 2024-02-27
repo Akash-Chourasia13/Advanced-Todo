@@ -14,6 +14,7 @@ class addTaskViewSet(viewsets.ViewSet):
     def create(self, request):
         print("111")
         task = request.data.get('task')
+        print(task)
         new_data = {
             'description':task
         }    
